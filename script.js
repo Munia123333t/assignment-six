@@ -1,4 +1,3 @@
-
 // // fetch the data 
 // const loadCategories = () => {
 //     fetch(`https://openapi.programming-hero.com/api/peddy/categories`)
@@ -73,3 +72,18 @@ const displayCategories = (categories) => {
 
 loadCategories();
 
+// start card section 
+
+const loadAllPets = () => {
+    fetch(`https://openapi.programming-hero.com/api/peddy/pets`)
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.log(error));
+};
+
+// display pet card 
+
+
+
+
+loadAllPets()

@@ -76,9 +76,61 @@
         </div>
     </main>
 
+  <!-- button related work -->
+    <nav class="flex justify-between gap-2 mx-8 " id="categories"></nav>
 
-    <nav class="flex justify-between mx-8 " id="categories"></nav>
-    
+    <!-- Sort By Price -->
+    <div class=" text-xl font-bold py-12 px-5 flex justify-between">
+        <h4>Best Deal For You</h4>
+
+      <button class="btn btn-active btn-accent  mb-8" onclick="sortByPrice()">Sort by Price</button>
+    </div>
+ 
+
+    <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8 px-8">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex gap-2">
+          <img src="images/logo.webp" alt="">
+       
+          <h3 class="font-bold text-xl">Peddy</h3>
+          </div>
+            <p class="text-gray-400">Location: av. Washington 165, NY CA 54003</p>
+            <p  class="text-gray-400">Phone: +31 85 964 47 25</p>
+            <p  class="text-gray-400">Email: info@yourdomain.com</p>
+            <p  class="text-gray-400">Openings hours: 9.00 AM - 5.00 PM</p>
+            <!-- icons -->
+            <div>
+                <br>
+                <div class="flex space-x-4">
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                  </div>
+            </div>
+        </div>
+      <div>
+        <h3 class="font-bold text-xl">Useful Links</h3>
+        <ul class="space-y-2">
+                <li  class="text-gray-400">Home</li>
+                <li  class="text-gray-400">About Us</li>
+                <li  class="text-gray-400">Animals</li>
+                <li  class="text-gray-400">Foundation</li>
+                <li  class="text-gray-400">Contact</li>
+            </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-xl">Drop a Message</h3>
+        <br>
+        <input type="text" placeholder="Enter Your Email" class="input input-bordered w-full max-w-xs bg-gray-700" />
+        
+        <br>
+        <br>
+        <button class="btn btn-active btn-accent"> Subscribe</button>
+      </div>
+    </div>
+    </footer>
 
 
     <script src="script.js"></script>
