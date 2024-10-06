@@ -77,13 +77,33 @@ loadCategories();
 const loadAllPets = () => {
     fetch(`https://openapi.programming-hero.com/api/peddy/pets`)
     .then((res) => res.json())
-    .then((data) => console.log(data))
+    .then((data) => displayPetCard(data.pets))
     .catch((error) => console.log(error));
 };
 
 // display pet card 
-
+const displayPetCard = (pets) => {
+  const petContainer = document.getElementById('pets')
+    pets.forEach(pet => {
+        console.log(pet)
+        const card = document.createElement('div');
+        card.classList='card card-compact'
+        card.innerHTML= ` <figure>
+    <img
+      src="${pet.image}"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Shoes!</h2>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+   
+  </div>`
+  petContainer.append(card)
+    })
+}
 
 
 
 loadAllPets()
+
+
